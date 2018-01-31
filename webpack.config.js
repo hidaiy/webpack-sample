@@ -16,14 +16,14 @@ module.exports = {
         contentBase: './dist',
     },
 
-
     plugins: [
         // distディレクトリのクリーンアップ
         new CleanWebpackPlugin(['dist']),
 
         // index.htmlファイルの動的生成
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: 'Output Management',
+            template: './src/index.html'
         }),
     ],
 
